@@ -12,72 +12,63 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body class="bg-gray-300">
+
 <!-- Navbar -->
-<nav id="nav" class="relative container mx-auto p-6">
-    <!-- Flex container -->
-        <div class="flex items-center justify-between">
-            <!-- Logo -->
-            <div class="pt-2">
-                <a href="#" class="font-bold text-5xl hover:text-blue-400">
-                    <span>Logo</span>
-                </a>
-            </div>
-            <!-- Menu Items -->
-            <div class="hidden md:flex space-x-6">
-                <a href="#" class="hover:text-blue-400 delay-200">Home</a>
-                <a href="#services" class="hover:text-blue-400 delay-200">Services</a>
-                <a href="#hero" class="hover:text-blue-400 delay-200">About Us</a>
-                <a href="#gallery" class="hover:text-blue-400 delay-200">Gallery</a>
-            </div>
-            
-            <!-- Hamburger Icon -->
-            <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
-                <span class="hamburger-top"></span>
-                <span class="hamburger-middle"></span>
-                <span class="hamburger-bottom"></span>
-            </button>
+<header class="py-6">
+    <div class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+        <div class="text-2xl font-bold hover:text-blue-400 ease-in-out delay-150"><a href="#"><span>Company's Logo</span></a></div>
+        <div class="hidden md:flex space-x-12 items-center">
+            <a href="#" class="hover:text-blue-400 ease-in-out delay-150">Home</a>
+            <a href="#work" class="hover:text-blue-400 ease-in-out delay-150">Services</a>
+            <a href="#clients" class="hover:text-blue-400 ease-in-out delay-150">Gallery</a>
+            <a href="#hire"><button class="px-6 py-2 bg-blue-600 font-bold rounded hover:bg-black hover:text-white ease-in-out delay-150">Contact Us</button></a>
         </div>
-    
+        <!-- Hamburger Icon -->
+        <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+        </button>
+    </div>
+
     <!-- Mobile Menu -->
-        <div class="md:hidden">
-            <div id="menu" class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-blue-400 hover:text-gray-300 sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
-                <a href="#">Home</a>
-                <a href="#services">Services</a>
-                <a href="#hero">About Us</a>
-                <a href="#gallery">Gallery</a>
-            </div>
+    <div class="md:hidden">
+        <div id="menu" class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold rounded bg-blue-400 sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Gallery</a>
         </div>
-</nav>
+    </div>
+</header>
 
 <!-- Hero Section -->
-<section id="hero">
+<section id="hero" class="py-6">
     <!-- Flex Contianer -->
-    <div class="container flex flex-col-reverse items-center px-6 mx-auto mt-6 md:mt-12 space-y-0 md:space-y-0 md:flex-row">
+    <div class="container flex flex-col-reverse items-center mx-auto px-8 md:px-14 lg:px-24 w-full md:mt-10 space-y-0 md:space-y-0 md:flex-row">
         <!-- Left Item -->
-        <div class="flex flex-col mb-12 space-y-12 md:w-1/2">
-            <h1 class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left mt-6">
-                You dream it, We build it!....
+        <div class="flex flex-col mb-6 md:mb-32 space-y-12 md:w-1/2">
+            <h1 class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left my-2">
+                You dream it, we build it!....
             </h1>
-            <p class="max-w-sm text-center text-darkGrayishBlue md:text-left mt-0">
-                Ujenzi builds your dream house at affordable prices that you won't get anywhere, all you have to do is tell us when and where.
+            <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
+                Ujenzi makes quality houses for affordable prices, 
+                all you have to do is tell us when and where...
             </p>
                 <div class="flex justify-center md:justify-start">
-                <a href="#footer" class="p-2 px-4 md:p-3 md:px-6 text-black bg-blue-400 rounded baseline hover:bg-black hover:text-blue-400">
-                    Conctact Us
-                </a>
+                <a href="#hire"><button class="px-6 py-2 bg-blue-600 font-bold rounded hover:bg-black hover:text-white ease-in-out delay-150">Contact Us</button></a>
                 </div>
         </div>
         <!-- Image -->
         <div class="md:w-1/2">
-            <img src="./images/hero.png" class="rounded" alt="Hero Photo">
+            <img src="/layouts/images/hero.png" alt="">
         </div>
     </div>
 </section>
 
 <!-- Services -->
-<section id="services">
+<section id="services" class="py-6">
     <!-- Container to heading and services blocks -->
-    <div class="max-w-6xl px-5 mx-auto mt-6 md:mt-12 text-center">
+    <div class="max-w-6xl mx-auto px-8 md:px-14 lg:px-24 w-full md:mt-10 text-center">
         <!-- Heading -->
         <h2 class="text-3xl font-bold text-center">
             These are the list of services we offer....
@@ -113,15 +104,13 @@
 
         <!-- Button -->
         <div class="my-12 md:my-6">
-            <a href="#footer" class="p-3 px-3 pt-2 text-blacl bg-blue-400 rounded baseline hover:bg-black hover:text-blue-400">
-                Contact Us
-            </a>
+            <a href="#hire"><button class="px-6 py-2 bg-blue-600 font-bold rounded hover:bg-black hover:text-white ease-in-out delay-150">Contact Us</button></a>
         </div>
     </div>
 </section>
 
 <!-- Gallery -->
-<div id="gallery" class="container mt-6 mb-12 md:mt-24 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+<div id="gallery" class="container mx-auto p-6 mt-6 mb-12 md:mt-12 flex justify-between items-center px-8 md:px-14 lg:px-24 w-full">
     <section class="w-full">
         <div class="border-t-theme bg-theme w-10 h-1 rounded-sm"></div>
         <h2 id="work" class="font-bold text-3xl">
@@ -152,9 +141,9 @@
 </div>
 
 <!-- footer -->
-<footer id="footer" class="bg-blue-400">
+<footer id="footer" class="bg-blue-400 mx-auto p-6">
     <!-- Flex Conatiner -->
-    <div class="container flex flex-col-reverse justify-between px-6 py-5 mx-auto space-y-8 md:flex-row md:space-y-0 items-center">
+    <div class="flex flex-col-reverse justify-between py-5 mx-auto px-8 md:px-14 lg:px-24 w-full md:mt-12 space-y-8 md:flex-row md:space-x-6 md:space-y-0 items-center">
 
         <!-- Logo -->
         <div class="mt-6">
@@ -168,7 +157,6 @@
             <div class="flex flex-col space-y-3 text-gray-700">
                 <a href="#" class="hover:text-gray-300">Home</a>
                 <a href="#services" class="hover:text-gray-300">Services</a>
-                <a href="#hero" class="hover:text-gray-300">About Us</a>
                 <a href="#gallery" class="hover:text-gray-300">Gallery</a>
             </div>
         </div>
@@ -191,25 +179,22 @@
         </div>
         <!-- Socila links conatiner -->
         <div class="flex justify-center space-x-4 mt-0">
+
             <!-- Link 1 -->
             <a href="#">
-                <i class="fa-brands fa-facebook-f fa-3x hover:text-gray-300"></i>
+                <i class="fa-brands fa-whatsapp fa-2x hover:text-green-700"></i>
             </a>
             <!-- Link 2 -->
             <a href="#">
-                <i class="fa-brands fa-whatsapp fa-3x hover:text-green-700"></i>
+                <i class="fa-brands fa-instagram fa-2x hover:text-pink-700"></i>
             </a>
             <!-- Link 3 -->
             <a href="#">
-                <i class="fa-brands fa-instagram fa-3x hover:text-pink-700"></i>
+                <i class="fa-brands fa-twitter fa-2x hover:text-gray-300"></i>
             </a>
             <!-- Link 4 -->
             <a href="#">
-                <i class="fa-brands fa-twitter fa-3x hover:text-gray-300"></i>
-            </a>
-            <!-- Link 5 -->
-            <a href="#">
-                <i class="fa-brands fa-skype fa-3x hover:text-gray-300"></i>
+                <i class="fa-brands fa-skype fa-2x hover:text-gray-300"></i>
             </a>
         </div>
     </div>
